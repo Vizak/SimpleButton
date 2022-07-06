@@ -1,9 +1,10 @@
 import { React } from 'react';
 import './App.scss';
-
-const App = () =>
+import Increment from './components/Increment';
+const App = ({ state: { count }}) =>
 	<div className="App" role="App">
-		Ready to start.
+		<div>Count: { count }</div>
+		<div>{ Increment() }</div>
 	</div>;
 
 export default App;
